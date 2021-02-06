@@ -1,0 +1,704 @@
+2021-02-06 15:37:40,832 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 10608 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 15:37:40,834 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 15:37:41,457 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 15:37:41,527 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 61ms. Found 2 repository interfaces.
+2021-02-06 15:37:41,827 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 15:37:42,145 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 15:37:42,153 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 15:37:42,153 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 15:37:42,153 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 15:37:42,224 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 15:37:42,224 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1339 ms
+2021-02-06 15:37:42,342 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 15:37:42,349 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 15:37:42,502 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 15:37:42,523 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 15:37:42,599 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.032s)
+2021-02-06 15:37:42,611 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 15:37:42,649 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 15:37:42,654 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 15:37:42,677 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 15:37:42,690 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.048s)
+2021-02-06 15:37:42,783 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 15:37:42,864 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 15:37:43,049 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 15:37:43,186 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 15:37:43,799 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 15:37:43,805 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 15:37:44,376 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 15:37:45,041 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 15:37:45,068 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-06 15:37:45,070 INFO [main] r.e.Application [StartupInfoLogger.java:61] Started Application in 4.565 seconds (JVM running for 5.064)
+2021-02-06 15:37:50,037 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 15:37:50,038 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-02-06 15:37:50,043 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
+2021-02-06 15:37:50,514 INFO [http-nio-8080-exec-3] o.s.a.AbstractOpenApiResource [AbstractOpenApiResource.java:68] Init duration for springdoc-openapi is: 235 ms
+2021-02-06 16:26:08,997 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 7960 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 16:26:08,999 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 16:26:09,610 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 16:26:09,680 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 60ms. Found 2 repository interfaces.
+2021-02-06 16:26:10,012 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 16:26:10,327 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 16:26:10,338 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:26:10,338 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 16:26:10,339 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 16:26:10,414 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 16:26:10,414 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1367 ms
+2021-02-06 16:26:10,540 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 16:26:10,548 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 16:26:10,687 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 16:26:10,707 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 16:26:10,780 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.037s)
+2021-02-06 16:26:10,792 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 16:26:10,822 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 16:26:10,826 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 16:26:10,848 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 16:26:10,860 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.043s)
+2021-02-06 16:26:10,943 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 16:26:11,021 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 16:26:11,180 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 16:26:11,304 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 16:26:11,980 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 16:26:11,986 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 16:26:12,608 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 16:26:13,471 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:26:13,497 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-06 16:26:13,501 INFO [main] r.e.Application [StartupInfoLogger.java:61] Started Application in 4.858 seconds (JVM running for 5.459)
+2021-02-06 16:26:17,718 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 16:26:17,719 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-02-06 16:26:17,741 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 21 ms
+2021-02-06 16:26:18,381 INFO [http-nio-8080-exec-2] o.s.a.AbstractOpenApiResource [AbstractOpenApiResource.java:68] Init duration for springdoc-openapi is: 350 ms
+2021-02-06 16:29:46,010 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 3212 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 16:29:46,018 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 16:29:47,628 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 16:29:47,757 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 110ms. Found 2 repository interfaces.
+2021-02-06 16:29:48,219 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 16:29:48,917 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 16:29:48,933 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:29:48,934 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 16:29:48,935 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 16:29:49,047 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 16:29:49,047 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 2899 ms
+2021-02-06 16:29:49,300 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 16:29:49,319 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 16:29:49,631 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 16:29:49,678 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 16:29:49,792 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.042s)
+2021-02-06 16:29:49,811 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 16:29:49,850 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 16:29:49,857 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 16:29:49,887 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 16:29:49,912 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.072s)
+2021-02-06 16:29:50,061 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 16:29:50,197 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 16:29:50,455 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 16:29:50,609 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 16:29:51,580 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 16:29:51,586 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 16:29:52,457 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 16:29:53,315 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:29:53,336 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:29:53,336 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2021-02-06 16:29:53,340 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:29:53,340 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:29:53,342 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 16:29:53,347 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-06 16:29:53,347 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 16:29:53,347 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-02-06 16:29:53,354 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-02-06 16:44:20,717 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 10688 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 16:44:20,724 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 16:44:22,290 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 16:44:22,454 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 148ms. Found 2 repository interfaces.
+2021-02-06 16:44:23,275 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 16:44:24,047 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 16:44:24,071 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:44:24,071 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 16:44:24,072 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 16:44:24,215 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 16:44:24,216 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 3371 ms
+2021-02-06 16:44:24,460 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 16:44:24,478 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 16:44:24,821 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 16:44:24,866 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 16:44:25,032 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.078s)
+2021-02-06 16:44:25,050 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 16:44:25,134 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 16:44:25,154 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 16:44:25,214 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 16:44:25,251 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.123s)
+2021-02-06 16:44:25,455 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 16:44:25,662 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 16:44:26,062 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 16:44:26,335 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 16:44:27,971 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 16:44:27,991 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 16:44:29,655 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 16:44:31,154 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:44:31,177 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:44:31,177 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2021-02-06 16:44:31,193 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:44:31,193 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:44:31,203 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 16:44:31,211 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-06 16:44:31,211 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 16:44:31,217 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-02-06 16:44:31,217 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-02-06 16:55:24,884 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 10228 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 16:55:24,886 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 16:55:25,480 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 16:55:25,551 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 61ms. Found 2 repository interfaces.
+2021-02-06 16:55:25,862 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 16:55:26,176 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 16:55:26,185 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:55:26,186 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 16:55:26,186 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 16:55:26,258 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 16:55:26,259 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1329 ms
+2021-02-06 16:55:26,365 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 16:55:26,374 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 16:55:26,520 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 16:55:26,541 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 16:55:26,626 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.035s)
+2021-02-06 16:55:26,644 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 16:55:26,684 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 16:55:26,690 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 16:55:26,713 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 16:55:26,725 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.049s)
+2021-02-06 16:55:26,801 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 16:55:26,887 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 16:55:27,036 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 16:55:27,161 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 16:55:27,810 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 16:55:27,819 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 16:55:28,422 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 16:55:29,149 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:55:29,185 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:55:29,186 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2021-02-06 16:55:29,190 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:55:29,190 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:55:29,193 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 16:55:29,196 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-06 16:55:29,197 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 16:55:29,199 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-02-06 16:55:29,202 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-02-06 16:59:46,343 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 1876 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 16:59:46,346 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 16:59:46,936 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 16:59:47,002 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 57ms. Found 2 repository interfaces.
+2021-02-06 16:59:47,312 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 16:59:47,594 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 16:59:47,610 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:59:47,612 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 16:59:47,612 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 16:59:47,671 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 16:59:47,678 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1285 ms
+2021-02-06 16:59:47,790 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 16:59:47,796 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 16:59:47,944 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 16:59:47,965 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 16:59:48,030 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.034s)
+2021-02-06 16:59:48,044 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 16:59:48,078 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 16:59:48,083 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 16:59:48,094 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 16:59:48,113 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.046s)
+2021-02-06 16:59:48,194 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 16:59:48,272 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 16:59:48,435 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 16:59:48,551 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 16:59:49,167 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 16:59:49,177 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 16:59:49,757 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 16:59:50,382 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:59:50,396 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:59:50,400 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2021-02-06 16:59:50,408 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:59:50,408 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2021-02-06 16:59:50,410 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 16:59:50,413 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-06 16:59:50,414 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 16:59:50,415 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-02-06 16:59:50,419 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-02-06 17:05:41,797 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 2540 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 17:05:41,803 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 17:05:43,310 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 17:05:43,490 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 152ms. Found 2 repository interfaces.
+2021-02-06 17:05:44,309 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 17:05:44,991 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 17:05:45,012 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 17:05:45,012 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 17:05:45,012 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 17:05:45,184 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 17:05:45,184 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 3263 ms
+2021-02-06 17:05:45,442 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 17:05:45,457 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 17:05:45,812 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 17:05:45,862 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 17:05:46,034 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.079s)
+2021-02-06 17:05:46,064 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 17:05:46,149 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 17:05:46,159 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 17:05:46,220 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 17:05:46,255 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.122s)
+2021-02-06 17:05:46,442 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 17:05:46,636 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 17:05:46,992 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 17:05:47,296 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 17:05:48,911 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 17:05:48,930 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 17:05:49,666 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 17:05:50,415 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 17:05:50,445 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-06 17:05:50,447 INFO [main] r.e.Application [StartupInfoLogger.java:61] Started Application in 9.449 seconds (JVM running for 10.825)
+2021-02-06 17:06:11,277 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 17:06:11,286 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-02-06 17:06:11,299 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 12 ms
+2021-02-06 17:06:12,440 INFO [http-nio-8080-exec-3] o.s.a.AbstractOpenApiResource [AbstractOpenApiResource.java:68] Init duration for springdoc-openapi is: 620 ms
+2021-02-06 17:12:07,633 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 120 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 17:12:07,637 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 17:12:08,279 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 17:12:08,351 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 59ms. Found 2 repository interfaces.
+2021-02-06 17:12:08,668 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 17:12:08,998 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 17:12:09,007 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 17:12:09,008 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 17:12:09,008 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 17:12:09,062 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 17:12:09,062 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1366 ms
+2021-02-06 17:12:09,179 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 17:12:09,196 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 17:12:09,339 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 17:12:09,365 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 17:12:09,429 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.028s)
+2021-02-06 17:12:09,439 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 17:12:09,471 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 17:12:09,476 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 17:12:09,495 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 17:12:09,510 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.044s)
+2021-02-06 17:12:09,585 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 17:12:09,667 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 17:12:09,815 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 17:12:09,937 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 17:12:10,639 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 17:12:10,645 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 17:12:11,284 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 17:12:12,094 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 17:12:12,110 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2021-02-06 17:12:12,112 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2021-02-06 17:12:12,115 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2021-02-06 17:12:12,115 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2021-02-06 17:12:12,117 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 17:12:12,120 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-06 17:12:12,120 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 17:12:12,122 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-02-06 17:12:12,125 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-02-06 17:38:41,385 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 11664 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 17:38:41,392 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 17:38:43,032 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 17:38:43,196 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 144ms. Found 2 repository interfaces.
+2021-02-06 17:38:44,031 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 17:38:44,751 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 17:38:44,765 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 17:38:44,765 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 17:38:44,765 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 17:38:44,910 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 17:38:44,911 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 3392 ms
+2021-02-06 17:38:45,205 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 17:38:45,225 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 17:38:45,598 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 17:38:45,664 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 17:38:45,807 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.063s)
+2021-02-06 17:38:45,842 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 17:38:45,921 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 17:38:45,932 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 17:38:45,988 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 17:38:46,025 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.125s)
+2021-02-06 17:38:46,217 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 17:38:46,406 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 17:38:46,765 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 17:38:47,086 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 17:38:48,694 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 17:38:48,717 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 17:38:50,348 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 17:38:51,908 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 17:38:51,975 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-06 17:38:51,986 INFO [main] r.e.Application [StartupInfoLogger.java:61] Started Application in 11.516 seconds (JVM running for 27.248)
+2021-02-06 17:40:30,036 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 17:40:30,036 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-02-06 17:40:30,057 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 13 ms
+2021-02-06 17:40:31,086 INFO [http-nio-8080-exec-3] o.s.a.AbstractOpenApiResource [AbstractOpenApiResource.java:68] Init duration for springdoc-openapi is: 564 ms
+2021-02-06 19:49:34,152 INFO [http-nio-8080-exec-10] o.h.e.i.DefaultLoadEventListener [DefaultLoadEventListener.java:116] HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not prepare statement
+org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:197)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4350)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:570)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:538)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:333)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1182)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1171)
+	at org.hibernate.internal.SessionImpl.access$2000(SessionImpl.java:198)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2809)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2790)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2746)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2790)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3340)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3312)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
+	at com.sun.proxy.$Proxy104.find(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:281)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:657)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:621)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:353)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy118.findById(Unknown Source)
+	at ru.example.service.impl.ContactServiceImpl.add(ContactServiceImpl.java:65)
+	at ru.example.service.impl.ContactServiceImpl$$FastClassBySpringCGLIB$$e7353f7b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:353)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at ru.example.service.impl.ContactServiceImpl$$EnhancerBySpringCGLIB$$d1bb445f.add(<generated>)
+	at ru.example.controller.ContactController.createContact(ContactController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_ from users user0_ where user0_.id=? [42102-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7146)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1895)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2641)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2788)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2636)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2469)
+	at org.h2.command.Parser.parseSelect(Parser.java:2440)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:788)
+	at org.h2.command.Parser.parse(Parser.java:760)
+	at org.h2.command.Parser.prepareCommand(Parser.java:683)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.engine.Session.prepareCommand(Session.java:565)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:316)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	... 116 common frames omitted
+2021-02-06 19:57:52,832 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 10752 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 19:57:52,836 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 19:57:53,620 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 19:57:53,708 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 75ms. Found 2 repository interfaces.
+2021-02-06 19:57:54,054 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 19:57:54,388 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 19:57:54,397 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 19:57:54,397 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 19:57:54,398 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 19:57:54,449 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 19:57:54,449 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1547 ms
+2021-02-06 19:57:54,570 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 19:57:54,577 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 19:57:54,740 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 19:57:54,765 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 19:57:54,837 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.034s)
+2021-02-06 19:57:54,848 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 19:57:54,889 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 19:57:54,894 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 19:57:54,925 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 19:57:54,936 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.054s)
+2021-02-06 19:57:55,031 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 19:57:55,132 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 19:57:55,338 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 19:57:55,480 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 19:57:56,160 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 19:57:56,160 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 19:57:56,838 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 19:57:57,502 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 19:57:57,513 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2021-02-06 19:57:57,513 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2021-02-06 19:57:57,522 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2021-02-06 19:57:57,522 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2021-02-06 19:57:57,524 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-06 19:57:57,527 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-06 19:57:57,527 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 19:57:57,530 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-02-06 19:57:57,533 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-02-06 20:16:20,769 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 5244 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 20:16:20,772 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 20:16:21,377 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 20:16:21,450 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 61ms. Found 2 repository interfaces.
+2021-02-06 20:16:21,786 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 20:16:22,094 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 20:16:22,111 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 20:16:22,112 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 20:16:22,113 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 20:16:22,182 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 20:16:22,185 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1367 ms
+2021-02-06 20:16:22,294 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 20:16:22,301 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 20:16:22,450 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 20:16:22,475 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 20:16:22,546 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.028s)
+2021-02-06 20:16:22,559 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 20:16:22,591 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 20:16:22,595 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 20:16:22,618 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 20:16:22,630 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.044s)
+2021-02-06 20:16:22,705 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 20:16:22,787 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 20:16:22,942 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 20:16:23,076 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 20:16:23,683 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 20:16:23,689 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 20:16:24,280 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 20:16:24,947 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 20:16:24,989 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-06 20:16:24,995 INFO [main] r.e.Application [StartupInfoLogger.java:61] Started Application in 4.531 seconds (JVM running for 5.238)
+2021-02-06 20:16:38,016 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 20:16:38,017 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-02-06 20:16:38,027 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 8 ms
+2021-02-06 20:16:39,033 INFO [http-nio-8080-exec-5] o.s.a.AbstractOpenApiResource [AbstractOpenApiResource.java:68] Init duration for springdoc-openapi is: 554 ms
+2021-02-06 20:28:06,634 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 13796 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 20:28:06,635 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 20:28:07,167 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 20:28:07,229 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 56ms. Found 2 repository interfaces.
+2021-02-06 20:28:07,526 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 20:28:07,792 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 20:28:07,792 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 20:28:07,792 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 20:28:07,792 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 20:28:07,854 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 20:28:07,854 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1178 ms
+2021-02-06 20:28:07,953 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 20:28:07,953 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 20:28:08,078 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 20:28:08,109 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 20:28:08,176 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.028s)
+2021-02-06 20:28:08,176 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 20:28:08,208 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 20:28:08,223 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 20:28:08,239 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 20:28:08,254 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.043s)
+2021-02-06 20:28:08,333 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 20:28:08,395 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 20:28:08,536 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 20:28:08,645 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 20:28:09,192 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 20:28:09,207 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 20:28:09,744 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 20:28:10,458 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 20:28:10,489 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-06 20:28:10,489 INFO [main] r.e.Application [StartupInfoLogger.java:61] Started Application in 4.131 seconds (JVM running for 4.551)
+2021-02-06 20:28:17,292 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 20:28:17,293 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-02-06 20:28:17,299 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
+2021-02-06 20:28:17,685 INFO [http-nio-8080-exec-2] o.s.a.AbstractOpenApiResource [AbstractOpenApiResource.java:68] Init duration for springdoc-openapi is: 260 ms
+2021-02-06 20:44:37,406 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 8248 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 20:44:37,406 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 20:44:37,934 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 20:44:37,997 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 57ms. Found 2 repository interfaces.
+2021-02-06 20:44:38,281 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 20:44:38,547 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 20:44:38,563 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 20:44:38,563 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 20:44:38,563 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 20:44:38,625 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 20:44:38,625 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1175 ms
+2021-02-06 20:44:38,718 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 20:44:38,718 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 20:44:38,843 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 20:44:38,858 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 20:44:38,937 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.029s)
+2021-02-06 20:44:38,937 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 20:44:38,968 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 20:44:38,968 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 20:44:38,983 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 20:44:38,999 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.040s)
+2021-02-06 20:44:39,077 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 20:44:39,155 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 20:44:39,283 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 20:44:39,393 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 20:44:39,972 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 20:44:39,987 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 20:44:40,526 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 20:44:41,188 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 20:44:41,219 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-06 20:44:41,219 INFO [main] r.e.Application [StartupInfoLogger.java:61] Started Application in 4.102 seconds (JVM running for 4.529)
+2021-02-06 21:14:00,982 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 14036 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 21:14:00,983 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 21:14:01,533 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 21:14:01,596 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 51ms. Found 2 repository interfaces.
+2021-02-06 21:14:01,877 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 21:14:02,158 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 21:14:02,158 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 21:14:02,158 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 21:14:02,158 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 21:14:02,227 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 21:14:02,227 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1195 ms
+2021-02-06 21:14:02,323 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 21:14:02,339 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 21:14:02,464 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 21:14:02,479 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 21:14:02,542 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.026s)
+2021-02-06 21:14:02,558 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 21:14:02,573 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 21:14:02,589 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 21:14:02,604 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 21:14:02,620 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.041s)
+2021-02-06 21:14:02,683 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 21:14:02,768 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 21:14:02,916 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 21:14:03,026 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 21:14:03,571 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 21:14:03,587 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 21:14:04,133 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 21:14:04,823 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 21:14:04,854 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-06 21:14:04,854 INFO [main] r.e.Application [StartupInfoLogger.java:61] Started Application in 4.174 seconds (JVM running for 4.619)
+2021-02-06 21:14:18,555 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 21:14:18,556 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-02-06 21:14:18,562 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 6 ms
+2021-02-06 21:14:19,391 INFO [http-nio-8080-exec-6] o.s.a.AbstractOpenApiResource [AbstractOpenApiResource.java:68] Init duration for springdoc-openapi is: 282 ms
+2021-02-06 22:28:15,927 INFO [main] r.e.Application [StartupInfoLogger.java:55] Starting Application v1.1-SNAPSHOT on DESKTOP-R8F7355 with PID 1540 (C:\Users\User\IdeaProjects\example-project\phonebook.jar started by User in C:\Users\User\IdeaProjects\example-project)
+2021-02-06 22:28:15,929 INFO [main] r.e.Application [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-02-06 22:28:16,522 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-06 22:28:16,589 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 57ms. Found 2 repository interfaces.
+2021-02-06 22:28:16,902 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-06 22:28:17,180 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:92] Tomcat initialized with port(s): 8080 (http)
+2021-02-06 22:28:17,194 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-06 22:28:17,195 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-02-06 22:28:17,195 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-02-06 22:28:17,261 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-02-06 22:28:17,261 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 1284 ms
+2021-02-06 22:28:17,366 INFO [main] o.f.c.i.l.VersionPrinter [Slf4jLog.java:49] Flyway Community Edition 6.0.6 by Redgate
+2021-02-06 22:28:17,369 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-02-06 22:28:17,517 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-02-06 22:28:17,537 INFO [main] o.f.c.i.d.DatabaseFactory [Slf4jLog.java:49] Database: jdbc:h2:mem:testdb (H2 1.4)
+2021-02-06 22:28:17,611 INFO [main] o.f.c.i.c.DbValidate [Slf4jLog.java:49] Successfully validated 2 migrations (execution time 00:00.031s)
+2021-02-06 22:28:17,626 INFO [main] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:49] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2021-02-06 22:28:17,664 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Current version of schema "PUBLIC": << Empty Schema >>
+2021-02-06 22:28:17,668 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 1 - init DB
+2021-02-06 22:28:17,682 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Migrating schema "PUBLIC" to version 2 - add user and contact
+2021-02-06 22:28:17,704 INFO [main] o.f.c.i.c.DbMigrate [Slf4jLog.java:49] Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.048s)
+2021-02-06 22:28:17,782 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 22:28:17,857 INFO [main] o.h.Version [Version.java:46] HHH000412: Hibernate Core {5.4.6.Final}
+2021-02-06 22:28:18,016 INFO [main] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-06 22:28:18,136 INFO [main] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 22:28:18,741 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 22:28:18,752 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 22:28:19,346 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 22:28:19,987 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-06 22:28:20,016 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-06 22:28:20,018 INFO [main] r.e.Application [StartupInfoLogger.java:61] Started Application in 4.401 seconds (JVM running for 4.876)
+2021-02-06 22:28:27,977 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 22:28:27,979 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-02-06 22:28:28,002 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 21 ms
+2021-02-06 22:28:28,699 INFO [http-nio-8080-exec-2] o.s.a.AbstractOpenApiResource [AbstractOpenApiResource.java:68] Init duration for springdoc-openapi is: 301 ms
+2021-02-06 23:14:11,217 INFO [http-nio-8080-exec-6] r.e.s.i.UserServiceImpl [UserServiceImpl.java:83] User with this id:1 is deleted
+2021-02-06 23:14:11,259 INFO [http-nio-8080-exec-6] o.h.e.j.b.i.AbstractBatchImpl [AbstractBatchImpl.java:204] HHH000010: On release of batch it still contained JDBC statements
+2021-02-06 23:15:07,577 INFO [http-nio-8080-exec-4] r.e.s.i.UserServiceImpl [UserServiceImpl.java:83] User with this id:1 is deleted
+2021-02-06 23:15:07,584 INFO [http-nio-8080-exec-4] o.h.e.j.b.i.AbstractBatchImpl [AbstractBatchImpl.java:204] HHH000010: On release of batch it still contained JDBC statements

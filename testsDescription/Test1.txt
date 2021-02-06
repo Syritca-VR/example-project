@@ -1,0 +1,1 @@
+Test makes a request by user ID and gets the request status.

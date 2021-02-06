@@ -1,0 +1,21 @@
+2021-02-06 19:03:37,037 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:787] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m51s313ms798µs200ns).
+2021-02-06 19:17:31,315 WARN [http-nio-8080-exec-4] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:37:14,022 WARN [http-nio-8080-exec-1] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:39:59,189 WARN [http-nio-8080-exec-2] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:42:26,084 WARN [http-nio-8080-exec-9] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:42:33,348 WARN [http-nio-8080-exec-6] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:42:41,860 WARN [http-nio-8080-exec-3] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:44:08,332 WARN [http-nio-8080-exec-6] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:44:10,447 WARN [http-nio-8080-exec-3] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:44:46,355 WARN [http-nio-8080-exec-1] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:44:53,663 WARN [http-nio-8080-exec-7] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:45:26,569 WARN [http-nio-8080-exec-2] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:45:32,650 WARN [http-nio-8080-exec-8] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:46:18,549 WARN [http-nio-8080-exec-9] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:47:35,486 WARN [http-nio-8080-exec-6] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 19:49:34,147 WARN [http-nio-8080-exec-10] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 22:24:55,404 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:787] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m52s502ms797µs600ns).
+2021-02-06 22:27:34,749 WARN [http-nio-8080-exec-8] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 22:27:36,881 WARN [http-nio-8080-exec-4] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 42102, SQLState: 42S02
+2021-02-06 23:14:11,259 WARN [http-nio-8080-exec-6] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 23503, SQLState: 23503
+2021-02-06 23:15:07,581 WARN [http-nio-8080-exec-4] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 23503, SQLState: 23503

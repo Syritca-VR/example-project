@@ -1,0 +1,1 @@
+There is a bug in this test, the json response contains the necessary parameters, but the test steel doesn't pass for some unknown reason.
